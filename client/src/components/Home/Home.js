@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core"
 import { useDispatch } from "react-redux"
 import { useHistory, useLocation } from "react-router-dom"
-import ChipInput from "material-ui-chip-input"
+// import ChipInput from "material-ui-chip-input"
 
 import { getPostsBySearch } from "../../actions/posts"
 import Posts from "../Posts/Posts"
@@ -84,14 +84,14 @@ const Home = () => {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-              <ChipInput
+              {/* <ChipInput
                 style={{ margin: "10px 0" }}
                 value={tags}
                 onAdd={(chip) => handleAddChip(chip)}
                 onDelete={(chip) => handleDeleteChip(chip)}
                 label="Search Tags"
                 variant="outlined"
-              />
+              /> */}
               <Button
                 onClick={searchPost}
                 className={classes.searchButton}
